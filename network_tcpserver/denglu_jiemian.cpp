@@ -81,6 +81,7 @@ void Denglu_jiemian::on_login_clicked()
                 TcpServer* t1 = new TcpServer();
             //    t1->setGeometry(this->geometry());
                 t1->show();
+                this->close();
 
         }
         else

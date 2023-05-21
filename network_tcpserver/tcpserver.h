@@ -21,6 +21,7 @@ public:
     QTcpSocket *tcpsocket;
     QList<QTcpSocket*> clientSockets;
     QTcpSocket* clientSocket;
+    QList<QPair<QTcpSocket*, QString>> messageList;//这个列表用于存储一个消息队列，其中每个消息由一个QTcpSocket和一个QString组成。群聊消息队列
 
 private slots:
     void newConnection_Slot();
