@@ -17,7 +17,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QTcpSocket *tcpsocket ;
-
+    QList<QString> messageList; // 存储服务端发送的未接收消息
+    QString str1;
 
 
 public slots:
@@ -30,6 +31,8 @@ public slots:
 
 private slots:
     void on_fanhui_clicked();
+
+    void on_display_history_jilu_clicked();
 
 private:
 
